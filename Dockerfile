@@ -7,4 +7,3 @@ RUN apt-get install zip unzip curl -y
 RUN curl -s "https://get.sdkman.io" | bash
 RUN chmod +x "$SDKMAN_DIR/bin/sdkman-init.sh"
 RUN /bin/bash -c "source $SDKMAN_DIR/bin/sdkman-init.sh && sdk install gradle 3.5"
-## sudo docker-compose -ti --rm api bash
